@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tea Cosy</title>
+        <link href="./resources/index.css" type="text/css" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <img src="./resources/img-tea-cozy-logo.png" height="50px" />
+            </div>
+            <div id="menuNav">
+                <ul class="listeNav">
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#teaOfTheMonth">Featured Tea</a></li>
+                    <li><a href="#location">Locations</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pour chaque section du site j'ai pris le formalisme : container / spacer / contenant -->
+        <div class="container">
+            <div class="spacer1">
+                <div class="backgroundImageTop">
+                    <div id="ourMission">
+                        <h2>Our Mission</h2>
+                        <h4>
+                             Handpicked, Artisanally curated, Free range, Sustainable, Small Batch, Fair Trade, Organic Tea
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="spacer2">
+                <div id="teaOfTheMonth">
+                    <h2>Tea of the Month</h2>
+                    <h4>What's Steeping at The Tea Cozy?</h4>
+                    <div class="treats">
+                        <div class="treatsPhotos">
+                            <img src="./resources/img-berryblitz.jpeg" alt="Fall Berry Blitz Tea"/>
+                            <figcaption>Fall Berry Blitz Tea</figcaption>
+                        </div>
+                        <div class="treatsPhotos">
+                            <img src="./resources/img-spiced-rum.jpeg" alt="Spiced Rum Tea"/>
+                            <figcaption>Spiced Rum Tea</figcaption>
+                        </div>
+                        <div class="treatsPhotos">  
+                            <img src="./resources/img-donut.jpeg" alt="Seasonal Donut"/>
+                            <figcaption>Seasonal Donut</figcaption>
+                        </div>
+                        <div class="treatsPhotos">
+                            <img src="./resources/img-myrtle-ave.jpeg" alt="Myrtle Ave Tea"/>
+                            <figcaption>Myrtle Ave Tea</figcaption>
+                        </div>
+                        <div class="treatsPhotos">
+                            <img src="./resources/img-bedford-bizarre.jpeg" alt="Bedford Bizarre Tea"/>
+                            <figcaption>Bedford Bizarre Tea</figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dans la section ci-dessous on a des nested flexbox. BackgroundImageBottom et box sont des flex. BackgroundImageBottom en column et box en row. -->
+        <div class="container">
+            <div class="spacer3">
+                <div class="backgroundImageBottom">
+                        <div id="location">
+                            <h2>Locations</h2>
+                        </div>
+                        <div class="box">
+                            <div class="addressBlock">
+                                <h3>Downtown</h3>
+                                <p>384 West 4th St</p>
+                                <p>Suite 108</p>
+                                <p>Portland, Maine</p>
+                            </div>
+                            <div class="addressBlock">
+                                <h3>East Bayside</h3>
+                                <p>3433 Phisherman's Avenue</p>
+                                <p>(Northewest Corner)</p>
+                                <p>Portland, Maine</p>
+                            </div>
+                            <div class="addressBlock">
+                                <h3>Oakdale</h3>
+                                <p>515 Crescent Avenue</p>
+                                <p>Second Floor</p>
+                                <p>Portland, Maine</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="spacer4">
+                <div class="contactDetails">
+                    <h2>The Tea Cozy</h2>
+                    <h5>contact@theteacozy.com</h5>
+                    <h5>917-555-8904</h5>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <footer>
+        <div id="footer">
+            <p>&copy; The Tea Cozy 2017 | F. BLOOM</p>
+        </div>
+    </footer>
+</html>

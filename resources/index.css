@@ -1,0 +1,187 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* Ci-dessus on supprime les quelques pixels de marge automatiques sur la page web */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+}
+
+/* On met le header en display:flex pour pouvoir déplacer le logo et le menu de navigation facilement */
+#header {
+    position: fixed;
+    top:0%;/* On maintient le header en tête de page. Sans cette instruction, étant en position: FIXED, il sort du flow du document et se retrouve superposé à l'élément du dessous */
+    margin:0 auto;
+    display: flex;
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+    justify-content: space-between;
+    z-index:10; /* Uniquement valable si dans un même <body>. Si l'on met le header dans un <header></header> a part ne fonctionne pas */
+}
+
+#logo {
+    /*display: inline-flex;*/
+    height: 50px;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+.listeNav li {
+    padding-right: 25px;
+    display: inline;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+#menuNav .listeNav a:hover {
+    color: yellow;
+}
+
+.container {
+    /* border: 1px solid red; */
+}
+
+/*Le spacer nous permet de centrer tout le contenu sur la page*/
+.spacer1 {
+    max-width: 1200px;
+    margin: 70px auto 0px;
+    /* Ici on met 70px de marge pour le haut pour laisser la place au header de 69 px et a sa ligne de souligné */
+}
+
+/* Ici c'est l'image qui va être le flex container qui va contenir le bandeau Our Mission en son centre */
+.backgroundImageTop {
+    display: flex;
+    /* border: 1px solid white; */
+    height: 700px;
+    width: 1200px;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*jvpojj*_ga*MTI2OTMzNzQyOC4xNjU0MTU4MTEx*_ga_3LRZM6TM9L*MTY1NTUyNTY1My40OS4xLjE2NTU1MzEzMzguNDc.');
+    align-items: center;
+    
+}
+
+#ourMission {
+    /* border: 1px solid green; */
+    width: 100%;
+    
+}
+
+#ourMission h2, #teaOfTheMonth h2, .contactDetails h2 {
+    text-align: center;
+    background-color: black;
+    font-size: 20px;
+    padding: 15px;
+}
+
+#ourMission h4, #teaOfTheMonth h4 {
+    text-align: center;
+    background-color: black;
+    font-size: 16px;
+    padding: 15px;
+}
+
+/*Le spacer nous permet de centrer tout le contenu sur la page*/
+.spacer2 {
+    /* border: 1px solid green; */
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+.treats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.treatsPhotos img {
+    height: 200px;
+    width: 300px;
+    margin: 10px 15px;
+}
+
+.treatsPhotos figcaption {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+/*Le spacer nous permet de centrer tout le contenu sur la page*/
+.spacer3 {
+    max-height: 500px;
+    max-width: 1200px;
+    margin: 0px auto;
+    /* border: 1px solid green; */
+}
+
+.backgroundImageBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid white; */
+    height: 500px;
+    width: 1200px;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*wexej2*_ga*MTI2OTMzNzQyOC4xNjU0MTU4MTEx*_ga_3LRZM6TM9L*MTY1NTY5ODM2Ni41Mi4xLjE2NTU2OTkwNzQuNTE.');
+}
+
+/*On veut que les adresses s'affichent les unes à côté des autres */
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: transparent;
+    /*La couleur du background par défaut est noir, défini plus haut. On veut de la transparence entre les items de box donc en plus de les séparer avec justify-content: space-between il faut ajouter un fond transparent pour la flexbox.*/
+}
+
+.addressBlock {
+    width: 300px;
+    opacity: 1;
+    margin-right: 40px;
+}
+
+.addressBlock h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.addressBlock p {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 15px;
+}
+
+#location, #location h2 {
+    background-color: transparent;
+    padding: 15px;
+}
+
+.spacer4 {
+    max-width: 500px;
+    max-height: 200px;
+    margin: 0px auto;
+}
+
+.contactDetails h5 {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 15px;
+
+}
+
+#footer p {
+    /* border: 1px solid yellow; */
+    text-align: left;
+    color: seashell;
+    font-size: 15px;
+    margin-left: 20px;
+    padding: 15px;
+}
